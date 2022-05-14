@@ -8,3 +8,11 @@ const formInputs = () => {
     "profession": document.getElementById('professionInput').value,
   }
 }
+
+const getAllUsers = async () => {
+  const response = await fetch(BACKEND_URL);
+  const data = await response.json();
+  data.forEach(element => {
+    insertDataInTR(element);
+  });
+}
