@@ -28,3 +28,9 @@ const onFormSubmit = async () => {
   });
   document.location.reload(true);
 }
+
+const removeData = async (id) => {
+  const deleteUrl = `${BACKEND_URL}/${id}`;
+  await fetch(deleteUrl, { method: 'DELETE' });
+  document.location.reload(true);
+}
