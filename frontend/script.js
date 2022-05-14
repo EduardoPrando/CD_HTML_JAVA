@@ -34,3 +34,27 @@ const removeData = async (id) => {
   await fetch(deleteUrl, { method: 'DELETE' });
   document.location.reload(true);
 }
+
+const insertDataInTR = (data) => {
+  const newTr = document.createElement("TR");
+  Object.values(data).forEach((element, index) => {
+    const newTd = document.createElement("TD");
+    index === 0
+      ? newTd.innerHTML = document.querySelector("tbody").childElementCount + 1
+      : newTd.innerHTML = element;
+      newTr.appendChild(newTd);
+  });
+
+  createNewRemoveButton(newTr, data.id);
+  document.getElementById('tBodyRow').appendChild(newTr);
+}
+
+const createNewRemoveButton = (table, id) => {
+  const newTdButton = document.createElement("input");
+  newTdButton.type = "button";
+  newTdButton.value = "Remover";
+  newTdButton.onclick = () => removeData(id);
+  table.appendChild(newTdButton);
+}
+
+window.addEventListener('load', () => getAllUsers());
