@@ -16,3 +16,15 @@ const getAllUsers = async () => {
     insertDataInTR(element);
   });
 }
+
+const onFormSubmit = async () => {
+  const data = formInputs();
+  const response = await fetch(BACKEND_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  });
+  document.location.reload(true);
+}
