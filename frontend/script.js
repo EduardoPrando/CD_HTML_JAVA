@@ -39,6 +39,7 @@ const insertDataInTR = (data) => {
   const newTr = document.createElement("TR");
   Object.values(data).forEach((element, index) => {
     const newTd = document.createElement("TD");
+    newTd.className = "td-data";
     index === 0
       ? newTd.innerHTML = document.querySelector("tbody").childElementCount + 1
       : newTd.innerHTML = element;
@@ -51,6 +52,7 @@ const insertDataInTR = (data) => {
 
 const createNewRemoveButton = (table, id) => {
   const newTdButton = document.createElement("input");
+  newTdButton.className = "btn-remove";
   newTdButton.type = "button";
   newTdButton.value = "Remover";
   newTdButton.onclick = () => removeData(id);
