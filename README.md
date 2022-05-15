@@ -1,6 +1,6 @@
 ## Como instalar
 
-# Pre-requisitos para rodar o projeto Backend: 
+## Pre-requisitos para rodar o projeto Backend: 
 - mongoDB
 - MVN
 
@@ -26,14 +26,15 @@ Com esses passos o Spring está rodando devidamente e conectado com o MongoDB.
   A aplicação está configurada para rodar na porta local 27017. Caso deseje utilizar outra porta utilize o arquivo `application.properties` para trocar para a porta desejada.
 
 
-# Pre-requisitos para rodar frontend:
+## Pre-requisitos para rodar frontend:
 - vscode-live-server-plus-plus
 
-Adicionar a extenção Liver-Server ao sua IDE: `https://github.com/ritwickdey/vscode-live-server-plus-plus` para mais informações sobre a ultima versão do live server.
+Adicionar a extenção Liver-Server a sua IDE: `https://github.com/ritwickdey/vscode-live-server-plus-plus` para mais informações sobre a ultima versão do live server.
 
 * Após o backend estar conectado basta acessar:
 * `CD_HTML_JAVA/frontend`
-No arquivo index.html iniciar o Go Live
+
+Após selecionar o arquivo index.html, iniciar o Go Live
 ![image test](https://github.com/EduardoPrando/CD_HTML_JAVA/blob/main/img/goLive.png)
 
 ---
@@ -50,7 +51,9 @@ Foi utilizado para o desenvolvimento desse projeto o JAVA com SPRING BOOT para a
 
 Criar um sistema que adicione uma pessoa em uma tabela e que seja possível remove-la também.
 
-FRONTEND Você pode utilizar apenas HTML CSS e Javascript puro. Para isso você precisa apenas de campos de texto (inputs) um botão e uma tabela.
+### FRONTEND
+
+Você pode utilizar apenas HTML CSS e Javascript puro. Para isso você precisa apenas de campos de texto (inputs) um botão e uma tabela.
 
 Essa tabela deverá conter todos os dados de uma pessoa: nome, e-mail, telefone, profissão. Ao final de cada linha da tabela adicione um botão “remover”, ao clicar nele a linha deverá ser removida da tabela. Essa ação deverá ser comandada pelo seu código em Javascript e cooredenada com o backend.
 
@@ -60,10 +63,10 @@ Veja abaixo uma foto do que se espera:
 
 javascript-puro
 
-## BACKEND
+### BACKEND
 
 Você deve utilizar Java puro para criar o RESTful endpoint de insert (POST) e de remoção (DELETE) Deve salvar em um banco de dados MongoDB
 
-## SUGESTÕES:
+#### SUGESTÕES:
 
 Usar o Gson ou Jackson para serializar objetos JSON
