@@ -33,7 +33,7 @@ Adicionar a extenção Liver-Server ao sua IDE: `https://github.com/ritwickdey/v
 
 * Após o backend estar conectado basta acessar:
 * `CD_HTML_JAVA/frontend`
-No arquivo index.html iniciar o `Go Live`
+No arquivo index.html iniciar o Go Live
 ![image test](https://github.com/EduardoPrando/CD_HTML_JAVA/blob/main/img/goLive.png)
 
 ---
