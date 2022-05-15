@@ -2,11 +2,10 @@ package com.scc.backend.models;
 
 import java.io.Serializable;
 
-import javax.persistence.*;
-
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
+@Document(value = "user")
 public class UserModel implements Serializable {
 
   @Id
@@ -15,16 +14,6 @@ public class UserModel implements Serializable {
   private String email;
   private String telephone;
   private String profession;
-  
-  public UserModel(){}
-
-  public UserModel(String id, String name, String email, String telephone, String profession) {
-    this.id = id;
-    this.name = name;
-    this.email = email;
-    this.telephone = telephone;
-    this.profession = profession;
-  }
 
   public String getId() {
     return id;
