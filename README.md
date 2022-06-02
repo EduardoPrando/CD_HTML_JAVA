@@ -43,7 +43,10 @@ Após selecionar o arquivo index.html, iniciar o Go Live
 
 * Após o backend estar conectado basta acessar:
 * `CD_HTML_JAVA/frontend-angular`
-* no terminal usar o comando `ng serve` para rodar o front
+  no terminal usar o comando:
+* `npm install` - para instalar as dependencias;
+  Após a conclusão:
+* `ng serve` - para roda a pagina;
 
 ---
 
