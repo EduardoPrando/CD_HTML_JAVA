@@ -27,6 +27,7 @@ Com esses passos o Spring está rodando devidamente e conectado com o MongoDB.
 
 
 ## Pre-requisitos para rodar frontend:
+# Frontend HTTP
 - vscode-live-server-plus-plus
 
 Adicionar a extenção Liver-Server a sua IDE: `https://github.com/ritwickdey/vscode-live-server-plus-plus` para mais informações sobre a ultima versão do live server.
@@ -36,6 +37,13 @@ Adicionar a extenção Liver-Server a sua IDE: `https://github.com/ritwickdey/vs
 
 Após selecionar o arquivo index.html, iniciar o Go Live
 ![image test](https://github.com/EduardoPrando/CD_HTML_JAVA/blob/main/img/goLive.png)
+
+# Frontend Angular
+- Angular - v13.3.7
+
+* Após o backend estar conectado basta acessar:
+* `CD_HTML_JAVA/frontend-angular`
+* no terminal usar o comando `ng serve` para rodar o front
 
 ---
 
