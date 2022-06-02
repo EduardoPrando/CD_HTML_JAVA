@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Telefone</th>
+    <th>Profissão</th>
+    <th>Ação</th>
+  </thead>
+  <tbody *ngIf="userInfo.length > 0; else noRegister">
+    <tr *ngFor="let user of userInfo let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.telephone }}</td>
+      <td>{{ user.profession }}</td>
+      <button (click)="deleteUserButton(user.id)" type="submit">Remover</button>
+    </tr>
+  </tbody>
+  <ng-template #noRegister>
+    <p>No registered Data</p>
+  </ng-template>
+</table>
