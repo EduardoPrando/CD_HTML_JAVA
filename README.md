@@ -43,6 +43,7 @@ Após selecionar o arquivo index.html, iniciar o Go Live
 
 * Após o backend estar conectado basta acessar:
 * `CD_HTML_JAVA/frontend-angular`
+
   no terminal usar o comando:
 * `npm install` - para instalar as dependencias;
   Após a conclusão:
