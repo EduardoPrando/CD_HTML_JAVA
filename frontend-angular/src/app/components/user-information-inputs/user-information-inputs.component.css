@@ -1,0 +1,9 @@
+.inputs-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inputs-all > input,button {
+  margin: 0 5px 10px 5px;
+}

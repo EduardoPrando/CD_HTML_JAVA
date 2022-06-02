@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../service/user.service';
 import { UserModule } from '../../models/user.module';
 
@@ -8,7 +8,8 @@ import { UserModule } from '../../models/user.module';
   styleUrls: ['./user-information-table.component.css']
 })
 export class UserInformationTableComponent implements OnInit {
-  @Input() userInfo: any[] = [];
+  public userInfo: any[] = [];
+  asdf: any;
 
   constructor(private service: UserService) { }
 
@@ -21,6 +22,7 @@ export class UserInformationTableComponent implements OnInit {
   deleteUserButton (userId: string) {
     this.service.deleteUser(userId).subscribe(() => (
       this.ngOnInit()
-    ));
+      ));
+      console.log(this.asdf);
   }
 }

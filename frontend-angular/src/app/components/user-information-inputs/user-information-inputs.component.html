@@ -1,7 +1,45 @@
 <form (ngSubmit)="onSubmit()">
-  <input id="name" type="text" name="name" placeholder="Nome" [(ngModel)]="name" />
-  <input type="text" name="email" placeholder="Email" [(ngModel)]="email" />
-  <input type="text" name="telephone" placeholder="Telefone" [(ngModel)]="telephone" />
-  <input type="text" name="profession" placeholder="Profissão" [(ngModel)]="profession" />
-  <button type="submit">Enviar</button>
+  <div class="inputs-all">
+    <input
+      id="name"
+      type="text"
+      name="name"
+      placeholder="Nome"
+      [(ngModel)]="name"
+      pInputText
+      class="ml-2"
+    />
+    <input
+      type="text"
+      name="email"
+      placeholder="Email"
+      [(ngModel)]="email"
+      pInputText
+      class="ml-2"
+    />
+    <input
+      type="text"
+      name="telephone"
+      placeholder="Telefone"
+      [(ngModel)]="telephone"
+      pInputText
+      class="ml-2"
+    />
+    <input
+      type="text"
+      name="profession"
+      placeholder="Profissão"
+      [(ngModel)]="profession"
+      pInputText
+      class="ml-2"
+    />
+    <button
+      type="submit"
+      pButton
+      pRipple
+      class="p-button-raised p-button-text p-button-plain"
+    >
+      Enviar
+    </button>
+  </div>
 </form>

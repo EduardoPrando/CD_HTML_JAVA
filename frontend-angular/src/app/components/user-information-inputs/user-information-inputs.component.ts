@@ -7,10 +7,10 @@ import { UserService } from '../../service/user.service';
   styleUrls: ['./user-information-inputs.component.css']
 })
 export class UserInformationInputsComponent implements OnInit {
-  public name: string ='teste';
-  public email: string = 'teste';
-  public telephone: string = 'teste';
-  public profession: string = 'teste';
+  public name: string ='';
+  public email: string = '';
+  public telephone: string = '';
+  public profession: string = '';
 
   constructor(private service: UserService) { }
 
