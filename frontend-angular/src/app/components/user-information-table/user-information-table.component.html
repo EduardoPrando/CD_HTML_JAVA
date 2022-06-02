@@ -1,0 +1,63 @@
+<!-- <table>
+  <thead>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Telefone</th>
+    <th>Profissão</th>
+    <th>Ação</th>
+  </thead>
+  <tbody *ngIf="userInfo.length > 0; else noRegister">
+    <tr *ngFor="let user of userInfo let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.telephone }}</td>
+      <td>{{ user.profession }}</td>
+      <button (click)="deleteUserButton(user.id)" type="submit">Remover</button>
+    </tr>
+  </tbody>
+  <ng-template #noRegister>
+    <p>No registered Data</p>
+  </ng-template>
+</table> -->
+
+<p-table
+  [value]="userInfo"
+  styleClass="p-datatable-gridlines"
+  responsiveLayout="scroll"
+  class="table-user"
+>
+  <ng-template pTemplate="header">
+    <tr class="tableHead">
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Telefone</th>
+      <th>Profissão</th>
+      <th>Ação</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-user let-i="rowIndex" class="tBodyRow">
+    <tr [style.background]="i % 2 == 0 ? 'transparent' : '#F3F1F2'">
+      <td>{{ i + 1 }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.telephone }}</td>
+      <td>{{ user.profession }}</td>
+      <td [ngStyle]="{textAlign: 'center'}">
+        <button
+          (click)="deleteUserButton(user.id)"
+          type="submit"
+          pButton
+          pRipple
+          class="p-button-text p-button-secondary"
+          >
+          <!-- class="p-button-raised p-button-text p-button-danger" -->
+          Remover
+        </button>
+      </td>
+    </tr>
+  </ng-template>
+
+</p-table>
